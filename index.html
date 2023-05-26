@@ -303,10 +303,10 @@
         <div class="brand">
             <div class="title center-align">
                 <!-- 
-                    subtitle
+                    不忘初心，方得始終
                  -->
                 
-                    subtitle
+                    不忘初心，方得始終
                 
             </div>
 
@@ -435,7 +435,7 @@ $(function () {
     new APlayer({
         container: document.getElementById('aplayer'),
         fixed: 'false' === 'true',
-        autoplay: 'true' === 'true',
+        autoplay: 'false' === 'true',
         theme: '#542674',
         loop: 'all',
         order: 'list',
@@ -443,7 +443,7 @@ $(function () {
         volume: Number('0.7'),
         listFolded: 'false' === 'true',
         listMaxHeight: '',
-        audio: JSON.parse('[{"name":"葡萄成熟時","artist":"陳奕迅","url":"/medias/music/1.mp3","cover":"/medias/music/avatars/1.jpg"}]')
+        audio: JSON.parse('[{"name":"葡萄成熟時","artist":"陳奕迅","url":"/medias/music/1.mp3","cover":"/medias/music/avatars/1.jpg"},{"name":"富士山下","artist":"陳奕迅","url":"/medias/music/2.mp3","cover":"/medias/music/avatars/2.jpg"},{"name":"我會等","artist":"承桓","url":"/medias/music/3.mp3","cover":"/medias/music/avatars/3.jpg"}]')
     });
 });
 </script>
@@ -454,6 +454,38 @@ $(function () {
                     <div id="recommend-sections" class="recommend">
                         
 
+
+
+
+
+<div class="title"><i class="fa fa-thumbs-o-up"></i>&nbsp;&nbsp;推薦文章</div>
+
+<div class="row">
+
+    
+    
+    <div class="col s12" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/26.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                    <a href="/categories/心得/" class="category" target="_blank">心得</a>
+                    
+                </div>
+                <a href="/2023/05/26/zhi-zuo-bo-ke-de-xin-de/" target="_blank">
+                    <h3 class="post-title">製作博客的心得</h3>
+                </a>
+                <p class="post-description">我的第一篇博客</p>
+                <a href="/2023/05/26/zhi-zuo-bo-ke-de-xin-de/" target="_blank"
+                        class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)">
+                    <i class="icon fa fa-eye fa-fw"></i>閱讀更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
 
 
                     </div>
@@ -471,6 +503,53 @@ $(function () {
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2023/05/26/zhi-zuo-bo-ke-de-xin-de/" target="_blank">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="製作博客的心得">
+                            
+                            <span class="card-title">製作博客的心得</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                            我的第一篇博客
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-05-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fa fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/心得/" class="post-category" target="_blank">
+                                    心得
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/博客/" target="_blank">
+                            <span class="chip bg-color">博客</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2020/01/14/5w2h-godweiyang/" target="_blank">
                         <div class="card-image">
                             
@@ -484,11 +563,7 @@ $(function () {
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            
-关注公众号【算法码上来】，每日算法干货马上就来！
-
-
-When？什么时候开始写的？第一次写博客是 2015 年了，在 CSDN 和博客园上面，当时写文章是为了记录 ACM 竞赛的题解，陆陆续续写了几十篇。但是最后还是没有坚持下去，主要还是
+                            When？什么时候开始写的？第一次写博客是 2015 年了，在 CSDN 和博客园上面，当时写文章是为了记录 ACM 竞赛的题解，陆陆续续写了几十篇。但是最后还是没有坚持下去，主要还是因为 CSDN 和博客园的体验太差了，写起文章来很难受，
                             
                         </div>
                         <div class="publish-info">
@@ -545,12 +620,12 @@ When？什么时候开始写的？第一次写博客是 2015 年了，在 CSDN �
             
                 <span id="busuanzi_container_site_pv" style='display:none'>
                     <i class="fa fa-heart-o"></i>
-                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                    本站總訪問量 <span id="busuanzi_value_site_pv" class="white-color"></span>
                 </span>
             
             
                 <span id="busuanzi_container_site_uv" style='display:none'>
-                    人次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                    次,&nbsp;訪客數 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
                 </span>
             
             

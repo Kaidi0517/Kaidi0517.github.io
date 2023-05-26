@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Kaidi&#39;s Blog</title>
   
-  <subtitle>subtitle</subtitle>
+  <subtitle>不忘初心，方得始終</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kaidi0517.github.io/"/>
-  <updated>2023-05-26T05:39:30.588Z</updated>
+  <updated>2023-05-26T07:47:35.949Z</updated>
   <id>https://kaidi0517.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>5W2H | 关于写博客的七点反思</title>
-    <link href="https://kaidi0517.github.io/2020/01/14/5w2h-godweiyang/"/>
-    <id>https://kaidi0517.github.io/2020/01/14/5w2h-godweiyang/</id>
-    <published>2020-01-14T07:27:31.000Z</published>
-    <updated>2023-05-26T05:39:30.588Z</updated>
+    <title>製作博客的心得</title>
+    <link href="https://kaidi0517.github.io/2023/05/26/zhi-zuo-bo-ke-de-xin-de/"/>
+    <id>https://kaidi0517.github.io/2023/05/26/zhi-zuo-bo-ke-de-xin-de/</id>
+    <published>2023-05-26T07:40:37.000Z</published>
+    <updated>2023-05-26T07:47:35.949Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,33 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;关注公众号【算法码上来】，每日算法干货马上就来！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
-&lt;h2 id=&quot;When？什么时候开始写的？&quot;&gt;&lt;a
+          &lt;h1 id=&quot;什麼是時候開始寫博客的？&quot;&gt;&lt;a href=&quot;#什麼是時候開始寫博客的？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="心得" scheme="https://kaidi0517.github.io/categories/%E5%BF%83%E5%BE%97/"/>
+    
+    
+      <category term="博客" scheme="https://kaidi0517.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>5W2H | 关于写博客的七点反思</title>
+    <link href="https://kaidi0517.github.io/2020/01/14/5w2h-godweiyang/"/>
+    <id>https://kaidi0517.github.io/2020/01/14/5w2h-godweiyang/</id>
+    <published>2020-01-14T07:27:31.000Z</published>
+    <updated>2023-05-26T07:25:41.648Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;When？什么时候开始写的？&quot;&gt;&lt;a href=&quot;#When？什么时候开始写的？&quot; class=&quot;headerlink&quot; title=&quot;When？什么时候开始写的？&quot;&gt;&lt;/a&gt;When？什么时候开始写的？&lt;/h2&gt;&lt;p&gt;第一次写博客是 2015 年了，在
         
       
     
