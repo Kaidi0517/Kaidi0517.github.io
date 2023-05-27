@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kaidi0517.github.io/"/>
-  <updated>2023-05-26T07:47:35.949Z</updated>
+  <updated>2023-05-27T13:52:08.735Z</updated>
   <id>https://kaidi0517.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown使用方法</title>
+    <link href="https://kaidi0517.github.io/2023/05/27/markdown-shi-yong-fang-fa/"/>
+    <id>https://kaidi0517.github.io/2023/05/27/markdown-shi-yong-fang-fa/</id>
+    <published>2023-05-27T13:20:00.000Z</published>
+    <updated>2023-05-27T13:52:08.735Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;簡要介紹&quot;&gt;&lt;a href=&quot;#簡要介紹&quot; class=&quot;headerlink&quot; title=&quot;簡要介紹&quot;&gt;&lt;/a&gt;簡要介紹&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt;是一種輕量型標記語言，是一種語法. 以 &lt;code&gt;.md&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="https://kaidi0517.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Markdown" scheme="https://kaidi0517.github.io/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>製作博客的心得</title>
     <link href="https://kaidi0517.github.io/2023/05/26/zhi-zuo-bo-ke-de-xin-de/"/>
     <id>https://kaidi0517.github.io/2023/05/26/zhi-zuo-bo-ke-de-xin-de/</id>
     <published>2023-05-26T07:40:37.000Z</published>
-    <updated>2023-05-26T07:47:35.949Z</updated>
+    <updated>2023-05-27T13:18:22.905Z</updated>
     
     <summary type="html">
     
