@@ -292,10 +292,10 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             <div class="tag-chips">
                 
                 
-                <a href="/tags/博客/" title="博客: 1">
+                <a href="/tags/第一篇博客/" title="第一篇博客: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="博客" style="background-color: #F9EBEA;">博客
+                            data-tagname="第一篇博客" style="background-color: #F9EBEA;">第一篇博客
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -333,7 +333,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"博客","weight":1,"link":"/tags/博客/"},{"text":"Markdown","weight":1,"link":"/tags/Markdown/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"第一篇博客","weight":1,"link":"/tags/第一篇博客/"},{"text":"Markdown","weight":1,"link":"/tags/Markdown/"}], {
         autoResize: true
     });
 </script>
@@ -348,7 +348,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;網站總字數:&nbsp;
-            <span class="white-color">943</span>
+            <span class="white-color">1.9k</span>
             
 
             <br>
@@ -450,7 +450,7 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
         var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
         var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+        document.getElementById("sitetime").innerHTML = "本站已運行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小時 " + diffMinutes + " 分鐘 " + diffSeconds + " 秒";
     }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
     siteTime();
 </script>

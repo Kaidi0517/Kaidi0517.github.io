@@ -529,7 +529,7 @@ $(function () {
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                            我的第一篇博客
+                            前言花了兩三天時間，搭建了一個屬於自己的博客，基本框架用的是hexo+github,看了網上教程、視頻、論壇，參考了別人的博客，我就不介紹詳細過程了，十分感謝其他大佬的分享，也感謝這兩個平台，讓我在互聯網上有了一個自己的小棲息地，就像在浩瀚
                             
                         </div>
                         <div class="publish-info">
@@ -552,8 +552,8 @@ $(function () {
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/博客/" target="_blank">
-                            <span class="chip bg-color">博客</span>
+                        <a href="/tags/第一篇博客/" target="_blank">
+                            <span class="chip bg-color">第一篇博客</span>
                         </a>
                         
                     </div>
@@ -574,7 +574,7 @@ $(function () {
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;網站總字數:&nbsp;
-            <span class="white-color">943</span>
+            <span class="white-color">1.9k</span>
             
 
             <br>
@@ -676,7 +676,7 @@ $(function () {
         var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
         var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-        document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+        document.getElementById("sitetime").innerHTML = "本站已運行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小時 " + diffMinutes + " 分鐘 " + diffSeconds + " 秒";
     }/*因为建站时间还没有一年，就将之注释掉了。需要的可以取消*/
     siteTime();
 </script>
