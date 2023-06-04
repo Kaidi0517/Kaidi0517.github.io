@@ -4,11 +4,11 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="博客,隨筆,生活,Kaidi">
+    <meta name="keywords" content="孤獨, 博客,隨筆,生活,Kaidi">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="Kaidi&#39;s Blog">
+    <meta name="description" content="孤獨一個人放學回家的路上，我看到別人結伴而行，心裡有些羨慕。轉眼，我卻在前面的路旁遇見了一棵與眾不同的樹，周圍的樹都緊密地站在一起，看起來他也有些孤獨。於是我走過去，問樹，樹哇樹，你是不是也有不合群的痛苦？可樹卻說，他才不痛苦，附近沒有其他">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Kaidi&#39;s Blog</title>
+    <title>孤獨 | Kaidi&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -250,307 +250,49 @@
 </header>
 
     
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color:rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                <!-- 
-                    不忘初心 方得始終
-                 -->
-                
-                    不忘初心 方得始終
-                
-            </div>
-
-            <div class="description center-align">
-                
-                    年少不得之物，終將困其一生
-                    <!-- <span id="jinrishici-sentence">正在加载今日诗词...</span> -->
-                
-            </div>
-        </div>
-    </div>
-</div>
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
-// 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>開始閱讀
-                </a>
-
-                
-                <a href="https://instagram.com/kaidi_0517?igshid=MzNlNGNkZWQ4Mg==" class="waves-effect waves-light btn" target="_blank">
-                    <i class="fa fa-instagram"></i>Instagram
-                </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/kaidi0517" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fa fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:huangkaidi0517@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fa fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fa fa-rss"></i>
-    </a>
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-$(function () {
-    let coverSlider = $('.carousel');
-    coverSlider.carousel({
-        duration: Number('120'),
-        fullWidth: true,
-        indicators: 'true' === 'true'
-    });
-
-    let carouselIntervalId;
-    
-    // Loop to call the next cover article picture.
-    let autoCarousel = function() {
-        carouselIntervalId = setInterval(function () {
-            coverSlider.carousel('next');
-        }, 5000);
-    };
-    autoCarousel();
-    
-
-    let restartPlay = function () {
-        
-        clearInterval(carouselIntervalId);
-        autoCarousel();
-        
-    };
-
-    
-    // prev and next cover post.
-    $('#prev-cover').click(function () {
-        coverSlider.carousel('prev');
-        restartPlay();
-    });
-    $('#next-cover').click(function () {
-        coverSlider.carousel('next');
-        restartPlay();
-    });
-    
-});
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('請輸入訪問本文章的密碼')).toString(CryptoJS.enc.Hex)) {
+                alert('密碼錯誤，即將返回主頁！');
+                location.href = '/';
+            }
+        }
+    })();
 </script>
 
 
 
-<main class="content">
 
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-
-                    
-                    
-
-<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<div class="music-player">
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="aplayer" class="music"></div>
-        </div>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script>
-$(function () {
-    new APlayer({
-        container: document.getElementById('aplayer'),
-        fixed: 'false' === 'true',
-        autoplay: 'false' === 'true',
-        theme: '#542674',
-        loop: 'all',
-        order: 'list',
-        preload: 'auto',
-        volume: Number('0.7'),
-        listFolded: 'false' === 'true',
-        listMaxHeight: '',
-        audio: JSON.parse('[{"name":"葡萄成熟時","artist":"陳奕迅","url":"/medias/music/1.mp3","cover":"/medias/music/avatars/1.jpg"},{"name":"富士山下","artist":"陳奕迅","url":"/medias/music/2.mp3","cover":"/medias/music/avatars/2.jpg"},{"name":"我會等","artist":"承桓","url":"/medias/music/3.mp3","cover":"/medias/music/avatars/3.jpg"}]')
-    });
-});
-</script>
-                    
-
-                    
-
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
+<div class="bg-cover pd-header post-cover" style="background-image: url('\medias\featureimages\1jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        孤獨
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+</div>
+
+
+
+<main class="container content">
 
     
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/06/04/luo-xiang-jiang-ren-sheng-1/" target="_blank">
-                        <div class="card-image">
-                            
-                            <img src="\medias\featureimages\14.jpg" class="responsive-img" alt="羅翔講人生-1">
-                            
-                            <span class="card-title">羅翔講人生-1</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            羅翔講人生-1習慣了面具下的人生，我們也就無法誠實地接受自己的不足，無法忍受批評，無法忍受他人的嘲笑，那最終我們也許會釋放我們內心的幽暗，走上不歸之路。所以，真的願我們每個同學都能擁有一個天真的朋友，讓我們誠實地面對自己，接納自己。過去的事
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/好文抄錄/" class="post-category" target="_blank">
-                                    好文抄錄
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
                     
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/人生-羅翔-友誼/" target="_blank">
-                            <span class="chip bg-color">人生,羅翔,友誼</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/06/04/gu-du/" target="_blank">
-                        <div class="card-image">
-                            
-                            <img src="\medias\featureimages\1jpg" class="responsive-img" alt="孤獨">
-                            
-                            <span class="card-title">孤獨</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            孤獨一個人放學回家的路上，我看到別人結伴而行，心裡有些羨慕。轉眼，我卻在前面的路旁遇見了一棵與眾不同的樹，周圍的樹都緊密地站在一起，看起來他也有些孤獨。於是我走過去，問樹，樹哇樹，你是不是也有不合群的痛苦？可樹卻說，他才不痛苦，附近沒有其他
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/好文抄錄/" class="post-category" target="_blank">
-                                    好文抄錄
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
+                    <div class="article-tag">
                         
                         <a href="/tags/孤獨-少年/" target="_blank">
                             <span class="chip bg-color">孤獨,少年</span>
@@ -559,104 +301,295 @@ $(function () {
                     </div>
                     
                 </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/好文抄錄/" class="post-category" target="_blank">
+                            好文抄錄
+                        </a>
+                        
+                    </div>
+                    
+                </div>
             </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/05/27/markdown-shi-yong-fang-fa/" target="_blank">
-                        <div class="card-image">
-                            
-                            <img src="\medias\featureimages\21.jpg" class="responsive-img" alt="Markdown使用方法">
-                            
-                            <span class="card-title">Markdown使用方法</span>
-                        </div>
-                    </a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>發布日期:&nbsp;&nbsp;
+                    2023-06-04
+                </div>
+
+                <div class="post-author info-break-policy">
+                    <i class="fa fa-user-o fa-fw"></i>文章作者:&nbsp;&nbsp;
+                    
+                    Kaidi Huang
+                    
+                </div>
+
+                
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-file-word-o fa-fw"></i>文章字數:&nbsp;&nbsp;
+                    312
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="fa fa-clock-o fa-fw"></i>閱讀時長:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+                
+
+                
+                <div id="busuanzi_container_page_pv" class="info-break-policy">
+                    <i class="fa fa-eye fa-fw"></i>閱讀次數:&nbsp;&nbsp;
+                    <span id="busuanzi_value_page_pv"></span>
+                </div>
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="孤獨"><a href="#孤獨" class="headerlink" title="孤獨"></a>孤獨</h2><p>一個人放學回家的路上，我看到別人結伴而行，心裡有些羨慕。轉眼，我卻在前面的路旁遇見了一棵與眾不同的樹，周圍的樹都緊密地站在一起，看起來他也有些孤獨。於是我走過去，問樹，樹哇樹，你是不是也有不合群的痛苦？可樹卻說，他才不痛苦，附近沒有其他樹木，這片土地就是他的專屬。我有些疑惑，於是問，你不過是孤零零的一棵樹，又有誰懂你的心聲呢？可他卻說，這裡的鳥兒會看他起舞，路過的風也會聽他傾訴，而這滿地堆積的落葉，都曾是他的親屬。我說，那我還蠻羨慕你的，你有一半自由飛揚在天，也有一半故事紮根在土，在這個角落裡，你看慣了朝暮，也不懼孤獨。樹卻笑了，說應該是他滿懷羨慕，少年能走的路很長，路上有他看不到的朝暮，別因為害怕孤獨就放慢腳步，前面還有無數個故事，可不要辜負。告別了樹後，我接著向前走，路上好像也沒那麼孤獨。</p>
+
+            </div>
+            <hr />
+
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        <p class="reprint-tip">
+            <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;
+            <span>版權聲明</span>
+        </p>
+        
+            <div class="center-align">
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                    <img alt=""
+                         style="border-width:0"
+                         src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+                </a>
+            </div>
+            <br/>
+            <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
+                  property="dct:title" rel="dct:type">
+                    《孤獨》
+                </span> by
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2023/06/04/gu-du/" property="cc:attributionName"
+               rel="cc:attributionURL">
+                Kaidi Huang
+            </a> is licensed under a
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                CC BY 4.0
+            </a>許可協議。轉載請註明來源
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>複製成功，請遵循本文的轉載規則</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/06/04/luo-xiang-jiang-ren-sheng-1/">
+                    <div class="card-image">
+                        
+                        <img src="\medias\featureimages\14.jpg" class="responsive-img" alt="羅翔講人生-1">
+                        
+                        <span class="card-title">羅翔講人生-1</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            羅翔講人生-1習慣了面具下的人生，我們也就無法誠實地接受自己的不足，無法忍受批評，無法忍受他人的嘲笑，那最終我們也許會釋放我們內心的幽暗，走上不歸之路。所以，真的願我們每個同學都能擁有一個天真的朋友，讓我們誠實地面對自己，接納自己。過去的事
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-06-04
+                        </span>
+                        <span class="publish-author">
                             
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/好文抄錄/" class="post-category" target="_blank">
+                                    好文抄錄
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/人生-羅翔-友誼/" target="_blank">
+                        <span class="chip bg-color">人生,羅翔,友誼</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/05/27/markdown-shi-yong-fang-fa/">
+                    <div class="card-image">
+                        
+                        <img src="\medias\featureimages\21.jpg" class="responsive-img" alt="Markdown使用方法">
+                        
+                        <span class="card-title">Markdown使用方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             簡要介紹Markdown是一種輕量型標記語言，是一種語法. 以 .md 結尾的文本檔就是 Markdown 檔. 相較於Word，它更加像是HTML語言，並不是最淳樸的那種“所見即所得”. 它處處透露著一種極簡主義. 高效簡潔清晰的同時，又
-                            
-                        </div>
-                        <div class="publish-info">
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2023-05-27
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/教程/" class="post-category" target="_blank">
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/教程/" class="post-category" target="_blank">
                                     教程
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/Markdown/" target="_blank">
-                            <span class="chip bg-color">Markdown</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2023/05/26/zhi-zuo-bo-ke-de-xin-de/" target="_blank">
-                        <div class="card-image">
-                            
-                            <img src="\medias\featureimages\0.jpg" class="responsive-img" alt="製作博客的心得">
-                            
-                            <span class="card-title">製作博客的心得</span>
-                        </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Markdown/" target="_blank">
+                        <span class="chip bg-color">Markdown</span>
                     </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                            前言花了兩三天時間，搭建了一個屬於自己的博客，基本框架用的是hexo+github,看了網上教程、視頻、論壇，參考了別人的博客，我就不介紹詳細過程了，十分感謝其他大佬的分享，也感謝這兩個平台，讓我在互聯網上有了一個自己的小棲息地，就像在浩瀚
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2023-05-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/心得/" class="post-category" target="_blank">
-                                    心得
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/第一篇博客/" target="_blank">
-                            <span class="chip bg-color">第一篇博客</span>
-                        </a>
-                        
-                    </div>
                     
                 </div>
+                
             </div>
-            
         </div>
-    </article>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('150')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '來源: Kaidi's Blog<br />'
+            + '文章作者: Kaidi Huang<br />'
+            + '文章連結: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作權歸作者所有，任何形式的轉載都請註明出處。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () { bodyElement.removeChild(newdiv); }, 200);
+    });
+</script>
+
+    
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">
